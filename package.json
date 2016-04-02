@@ -1,6 +1,6 @@
 {
   "name": "keinewaste-sdk",
-  "version": "0.1.8",
+  "version": "0.1.2",
   "description": "Keine Waste Javascript SDK.",
   "homepage": "http://github.com/keinewaste/keinewaste-sdk",
   "keywords": [
@@ -15,7 +15,7 @@
     "url": "http://github.com/keinewaste/keinewaste-sdk"
   },
   "bugs": {
-    "mail": "cagatay@instela.com",
+    "mail": "info@cagataygurturk.com",
     "url": "http://github.com/keinewaste/keinewaste-sdk"
   },
   "dependencies": {

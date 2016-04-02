@@ -44,23 +44,19 @@ module.exports = {
             "name": "ModifyUser",
             "http": {
                 "method": "PUT",
-                "requestUri": "/{id}"
+                "requestUri": "/me"
             },
             "parameters": [
                 {
-                    "name": "email",
+                    "name": "type",
                     "location": "body"
                 },
                 {
-                    "name": "password",
+                    "name": "address",
                     "location": "body"
                 },
                 {
-                    "name": "realname",
-                    "location": "body"
-                },
-                {
-                    "name": "username",
+                    "name": "companyName",
                     "location": "body"
                 }
             ],

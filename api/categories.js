@@ -5,7 +5,7 @@ module.exports = {
         "serviceFullName": "Keine Waste Service"
     },
     "operations": {
-        "Categories": {
+        "GetAll": {
             "name": "Categories",
             "http": {
                 "method": "GET",

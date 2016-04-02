@@ -9,7 +9,7 @@ describe('Keine Waste Categories client', function (done) {
     it('Gets Categories', function (done) {
         this.timeout(15000);
 
-        Categories.Categories({}, function (error, data) {
+        Categories.GetAll({}, function (error, data) {
             if (error) {
                 return done(error);
             }

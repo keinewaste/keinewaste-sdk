@@ -109,6 +109,66 @@ module.exports = {
                     "exception": true
                 }
             }
+        },
+        "CreateOffer": {
+            "name": "CreateOffer",
+            "http": {
+                "method": "POST",
+                "requestUri": "/offer"
+            },
+            "parameters": [
+                {
+                    "name": "deliveryType",
+                    "location": "body"
+                },
+                {
+                    "name": "description",
+                    "location": "body"
+                },
+                {
+                    "name": "distance",
+                    "location": "body"
+                },
+                {
+                    "name": "products",
+                    "location": "body"
+                },
+                {
+                    "name": "meetingTime",
+                    "location": "body"
+                },
+                {
+                    "name": "categories",
+                    "location": "body"
+                }
+            ],
+            "map": "Autocomplete",
+            "errors": {
+                "400": {
+                    "shape": "BadRequestException",
+                    "exception": true
+                },
+                "401": {
+                    "shape": "UnauthorizedException",
+                    "exception": true
+                },
+                "403": {
+                    "shape": "UnauthorizedException",
+                    "exception": true
+                },
+                "404": {
+                    "shape": "NotFoundException",
+                    "exception": true
+                },
+                "429": {
+                    "shape": "TooManyRequestsException",
+                    "exception": true
+                },
+                "409": {
+                    "shape": "ResourceConflictException",
+                    "exception": true
+                }
+            }
         }
     }
 };

@@ -35,7 +35,17 @@ describe('Keine Waste Market client', function (done) {
                     }
 
                     expect(data.length).to.greaterThan(0);
-                    return done();
+
+                    Market.Match({
+                        'id': marketId
+                    }, function (error, data) {
+                        if (error) {
+                            return done(error);
+                        }
+
+                        expect(data['id']).to.greaterThan(0);
+                        return done();
+                    });
                 });
 
             });

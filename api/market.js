@@ -169,6 +169,43 @@ module.exports = {
                     "exception": true
                 }
             }
+        },
+        "Match": {
+            "name": "Match",
+            "http": {
+                "method": "GET",
+                "requestUri": "/{id}/match"
+            },
+            "parameters": [
+
+            ],
+            "map": "Autocomplete",
+            "errors": {
+                "400": {
+                    "shape": "BadRequestException",
+                    "exception": true
+                },
+                "401": {
+                    "shape": "UnauthorizedException",
+                    "exception": true
+                },
+                "403": {
+                    "shape": "UnauthorizedException",
+                    "exception": true
+                },
+                "404": {
+                    "shape": "NotFoundException",
+                    "exception": true
+                },
+                "429": {
+                    "shape": "TooManyRequestsException",
+                    "exception": true
+                },
+                "409": {
+                    "shape": "ResourceConflictException",
+                    "exception": true
+                }
+            }
         }
     }
 };
